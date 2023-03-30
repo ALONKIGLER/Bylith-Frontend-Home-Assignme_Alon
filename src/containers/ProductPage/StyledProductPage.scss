@@ -1,0 +1,33 @@
+
+.product{
+  height: 100vh;
+  width: 100%;
+
+  
+ 
+}
+
+  .prod-card {
+     
+    .image-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 2rem;
+  
+      img {
+        width: 100px;
+        height: 100px;
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+        object-fit: cover;
+        border: 1px solid #ccc;
+        cursor: pointer;
+  
+        &.selected {
+          width: 200px;
+          height: 200px;
+        }
+      }
+    }
+  }
+  

@@ -1,0 +1,162 @@
+.homePage{
+    height: 100vh;
+    width: 100%;
+    background-color:  #ffffff;
+
+    .Rectangle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    }
+
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: auto  auto auto auto;
+      grid-template-rows: auto  auto auto; /* Add this line for three rows */
+      grid-gap: 16px;
+      width: 70%;
+      margin:auto;
+
+
+      @media (max-width:1090px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      @media (max-width: 590px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    
+    }
+
+}
+
+
+
+.PRODUCTS {
+    width: 182px;
+    height: 34px;
+    font-family: Roboto;
+    font-size: 28px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.11;
+    letter-spacing: 5.6px;
+    text-align: center;
+    color: #363636;
+    position: absolute; /* Change position to absolute */
+    z-index: 2; /* Set a higher z-index value */
+
+    @media (max-width: 590px) {
+        width: 162px;
+        height: 24px;
+        font-size: 22px;
+        font-weight: 400;
+      }
+    
+  }
+
+
+
+.Rectangle-67-copy {
+  width: 154px;
+  height: 46px;
+  background-color: #f9dfdf;
+  position: absolute;
+  top: -15px;
+  left:-65px;
+
+  
+  @media (max-width: 590px) {
+    width: 124px;
+    height: 40px;
+    top: -15px;
+    left:-55px;
+  
+  }
+
+}
+
+
+  .position{
+    width: 182px;
+    height: 34px;
+    position: relative;
+    margin: 50px 0;
+  }
+  
+
+  .nav-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 40px  40px 40px;
+    // : 40px 40px  40px 40px;
+  
+    button {
+        font-family: Roboto;
+        font-size: 25.4px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.22;
+        letter-spacing: 14.35px;
+        text-align: center;
+        color: #363636;
+        background-color: none;
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        margin: 0 5px ;
+
+          
+        @media (max-width: 590px) {
+        font-size: 20.4px;
+        font-weight: 400;
+        line-height: 1;
+        letter-spacing: 10.35px;
+        margin: 0 4px ;
+  
+  }
+
+  
+      &:hover {
+        background-color: #aaa;
+      }
+  
+      &:disabled {
+        opacity: 0.5;
+        cursor: default;
+      }
+  
+    }
+    
+    .butPrevNext {
+
+        width: 153px;
+        height: 30px;
+        margin: 0 10px ;
+        font-family: Roboto;
+        font-size: 25.4px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.22;
+        letter-spacing: normal;
+        color: #363636;
+
+        @media (max-width: 590px) {
+
+        width: 43px;
+        height: 20px;
+        margin: 0 7px ;
+        font-size: 12.4px;
+        
+        }
+      
+     
+      }
+
+  }

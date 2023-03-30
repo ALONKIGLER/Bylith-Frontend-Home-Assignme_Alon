@@ -1,0 +1,188 @@
+
+.page-wrapper {
+
+    display: grid;
+    grid-template-columns:   500px auto 350px;
+    grid-template-rows:  auto; /* Add this line for three rows */
+    gap: 20px;
+
+    @media (max-width: 630px) {
+        grid-template-columns:   300px auto 350px;
+      }
+
+    @media (max-width: 630px) {
+        grid-template-columns:   auto ;
+        grid-template-rows:  auto auto auto; /* Add this line for three rows */
+      }
+
+  }
+
+  .section1 {
+    padding: 20px 20px;
+    .gallery {
+      img {
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+  
+        &.selected {
+          border: 2px solid rgb(20, 19, 19);
+        }
+      }
+    }
+    .tab-content {
+      img {
+        width: 400px;
+        height: 550px;
+        margin-right: 10px;
+  
+        &.selected {
+          border: 2px solid rgb(20, 19, 19);
+        }
+      }
+    }
+  }
+
+  
+  .section2 {
+    background-color:  #ffffff;
+    padding: 10px;
+    max-width: 400px;
+
+    .titleProduct {
+        font-family: Roboto;
+        font-size: 28px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.11;
+        letter-spacing: 0.7px;
+        color: #2c2b2a;
+      }
+
+    .titlePrice{
+       
+            font-family: Roboto;
+            font-size: 18px;
+            font-weight: normal;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.72;
+            letter-spacing: 0.45px;    
+            color: #2c2b2a;
+         
+    }
+
+    .titleDescription{
+   
+        font-family: Roboto;
+        font-size: 15px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.67;
+        letter-spacing: 0.38px;
+        text-align: left;
+        color: #2c2b2a;
+    }
+
+    
+  }
+  
+  .section3 {
+        // background-color: rgb(182, 182, 174);    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        button {
+          padding: 8px 16px;
+          border-radius: 4px;
+          background-color: #007bff;
+          color: #fff;
+          font-size: 16px;
+          cursor: pointer;
+          transition: background-color 0.2s ease-in-out;
+          width: 90%;
+          height: 51px;
+          margin-top: 20px;
+          box-shadow: 0px 1px 3px 0 rgba(7, 7, 8, 0.46);
+          background-image: linear-gradient(to top, #31a893, #34ceb3);
+    
+          &:hover {
+            background-color: #0062cc;
+          }
+        }
+        
+        .QuantitySection{
+            width: 50%;
+            height: 150px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        
+           
+            .Quantity{
+            font-family: Roboto;
+            font-size: 15px;
+            font-weight: 300;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 2.07;
+            letter-spacing: 0.38px;
+            text-align: right;
+            color: #2c2b2a;
+        }
+
+        }
+        
+        .dropdown {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            height: 400px;
+          }
+          
+          .dropdown select {
+            font-family: Roboto;
+            font-size: 15px;
+            font-weight: 300;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 2.07;
+            letter-spacing: 0.38px;
+            color: #2c2b2a;
+            margin-top: 30px;
+            width: 300px;
+            padding: 0.5rem 1rem;
+            border: solid 1px #d5d5d5;
+            background-image: linear-gradient(to top, #f7fcfb, #fff);
+            // appearance: none;
+            // -webkit-appearance: none;
+            // -moz-appearance: none;
+          }
+          
+    
+          .dropdown label {
+            width: 100%;
+            height: 40px;
+        
+            border: solid 1px #d5d5d5;
+            background-image: linear-gradient(to top, #f7fcfb, #fff);
+          
+          }
+          
+ 
+  }
+
+
+
+
+
+      
+
+    
+  
+  
