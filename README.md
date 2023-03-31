@@ -1,6 +1,5 @@
+Could you please check out the "fixd_img_bug" branch of my project and test it on Microsoft Edge instead of Chrome?
 
-Please check the "fixd_img_bug"
+I have implemented React Redux to handle button click events, allowing me to easily manage each event with an action.
 
-In my project, I utilized React Redux to handle events triggered by button clicks. By doing so, I can easily manage the event with an action every time a user interacts with the button.
-
-Thank you!
+Thank you for your cooperation!
