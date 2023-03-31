@@ -7,24 +7,10 @@ import "./StyleHomeCard.scss";
  * @function  ProductCard
  * **/
 
-function HomeProductCard({
-  id,
-  title,
-  description,
-  onClick,
-  price_min,
-  price_max,
-  img,
-  pro,
-}) {
-  const [selectedImageIndex, setSelectedImageIndex] = useState(0);
+function HomeProductCard({ title, onClick, price_min, img }) {
   const [attributeId, setColor] = useState("");
   const [value, setValue] = useState("");
   const dispatch = useDispatch();
-
-  const handleImageClick = (index) => {
-    setSelectedImageIndex(index);
-  };
 
   useEffect(() => {
     dispatch(getProductFilleter(attributeId, value));

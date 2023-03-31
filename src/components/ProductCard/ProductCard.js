@@ -110,24 +110,26 @@ function ProductCard({
 
   return (
     <div className="page-wrapper" onClick={onClick}>
-      <div className="section1">
-        <div className="tab-content">
-          <img
-            src={`https://fedtest.bylith.com/api/imager.php?url=${img[selectedImageIndex].image.url}&type=fit&width=1000&height=1000&quality=70`}
-          />
-        </div>
-        <div className="gallery">
-          {img.map((image, index) => (
+      {img && img.length > 0 && (
+        <div className="section1">
+          <div className="tab-content">
             <img
-              key={index}
-              src={`https://fedtest.bylith.com/api/imager.php?url=${image.image.url}&type=fit&width=1000&height=1000&quality=70`}
-              alt={image.title}
-              className={index === selectedImageIndex ? "selected" : ""}
-              onClick={() => handleImageClick(index)}
+              src={`https://fedtest.bylith.com/api/imager.php?url=${img[selectedImageIndex].image.url}&type=fit&width=1000&height=1000&quality=70`}
             />
-          ))}
+          </div>
+          <div className="gallery">
+            {img.map((image, index) => (
+              <img
+                key={index}
+                src={`https://fedtest.bylith.com/api/imager.php?url=${image.image.url}&type=fit&width=1000&height=1000&quality=70`}
+                alt={image.title}
+                className={index === selectedImageIndex ? "selected" : ""}
+                onClick={() => handleImageClick(index)}
+              />
+            ))}
+          </div>
         </div>
-      </div>
+      )}
 
       <div className="section2">
         <span className="titleProduct">{title}</span>

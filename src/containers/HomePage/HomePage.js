@@ -5,10 +5,9 @@ import { useNavigate } from "react-router-dom";
 import "./StyledHomePage.scss";
 
 /**
-* @author
-* @function PageHome
-
-**/
+ * @author
+ * @function PageHome
+ **/
 
 const PageHome = (props) => {
   const ProductsProm = useSelector((state) => state.product);
